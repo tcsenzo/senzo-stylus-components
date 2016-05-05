@@ -2,7 +2,7 @@
   text-decoration: none
   display: inline-flex
   align-items: center
-  background-color: #ff0
+  background-color: #dedede
   color: button-default-color
   font-weight: 900
   padding: 10px
@@ -14,13 +14,16 @@
   font-size: button-font-size
   border-bottom: 0
   padding-bottom: 15px
+  cursor: pointer
+  position: relative
+  border: 0
+  &:active
+    box-shadow: 0px -2px 0px rgba(0,0,0,0.2) inset
+    padding-bottom: 10px
+    transform: translateY(3px)
   .fa
     margin-right: 8px
     font-size: button-icon-font-size
-  &:active
-    box-shadow: 0px -2px 0px rgba(0,0,0,0.2) inset
-    transform: translateY(3px)
-
 .inline-list
   .list-item
     display: inline-block
